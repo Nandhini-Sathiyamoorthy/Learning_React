@@ -1,0 +1,191 @@
+.heading {
+  color: brown;
+  text-align: center;
+}
+.home_image {
+  width: 250px;
+}
+.box_size {
+  box-sizing: border-box;
+  border: 1px solid brown;
+}
+.outer_container {
+  width: 100vw;
+  height: 100vh;
+}
+.header {
+  height: 10%;
+  width: 100%;
+}
+.body {
+  height: 90%;
+  width: 100%;
+  display: flex;
+}
+.sidebar {
+  width: 20%;
+  height: 100%;
+}
+.section {
+  width: 80%;
+  height: 100%;
+}
+.content {
+  width: 100%;
+  height: 80%;
+}
+.footer {
+  width: 100%;
+  height: 20%;
+}
+.link_button {
+  display: inline-block;
+  padding: 10px 35px;
+  border: 1px solid skyblue;
+  background-color: aliceblue;
+  margin: 10px 50px;
+  text-decoration: none;
+}
+.selection {
+  background-color: cadetblue;
+}
+.content_1_container {
+  padding: 10px;
+}
+/* textarea {
+  width: 100%;
+  height: 50%;
+} */
+.nav_link {
+  display: inline-block;
+  padding: 5px 40px;
+  margin: 5px 40px;
+  text-decoration: none;
+  border: 1px solid skyblue;
+}
+.form_container {
+  width: 25%;
+  height: 100vh;
+  margin: auto;
+  line-height: 2.4rem;
+  border: 1px solid green;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  overflow: auto;
+  color: green;
+  background-color: rgb(210, 245, 210);
+}
+.form_container::-webkit-scrollbar {
+  width: 10px;
+}
+label,
+input {
+  display: inline;
+}
+.name_align {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  padding: 5px 3px;
+}
+.name_input_width {
+  width: 90%;
+}
+.input_width {
+  width: 100%;
+  box-sizing: border-box;
+}
+.button_register {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(50, 156, 50);
+  border: none;
+  color: white;
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.show_container {
+  width: 75%;
+  box-sizing: border-box;
+  border: 1px solid rgb(50, 156, 50);
+  padding: 20px;
+}
+.mgn_btm {
+  margin-bottom: 20px;
+}
+.label_width {
+  display: inline-block;
+  width: 250px;
+}
+.error_msg {
+  color: red;
+}
+#homework_table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+#homework_table th,
+#homework_table td {
+  border: 1px solid #ddd;
+}
+#homework_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#homework_table tr:hover {
+  background-color: #ddd;
+}
+
+.student_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.student_list {
+  width: 200px;
+  height: 120px;
+  border: 1px solid navy;
+}
+
+.student_list h3 {
+  margin: 0px;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+th,
+td {
+  box-sizing: border-box;
+  padding: 5px 3px;
+  text-align: left;
+}
+.delete_icon {
+  color: red;
+}
+.edit_icon {
+  color: dodgerblue;
+}
+.save_icon {
+  color: green;
+}
+i {
+  margin-right: 10px;
+}
+.create_employee input {
+  margin-bottom: 10px;
+}
