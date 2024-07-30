@@ -11,6 +11,7 @@ class ClassComponent extends Component {
         email: "",
         password: "",
       },
+      loadInputUserDetails: [],
       getUserDetails: [],
     };
   }
@@ -25,6 +26,13 @@ class ClassComponent extends Component {
 
   handleToSubmitButton() {
     console.log(this.state.userDetails);
+    this.setState({
+      loadInputUserDetails: [
+        ...this.state.loadInputUserDetails,
+        { ...this.state.userDetails },
+      ],
+    });
+    console.log("submit", this.state.loadInputUserDetails);
   }
 
   getDetails() {
@@ -76,6 +84,29 @@ class ClassComponent extends Component {
             <button onClick={() => this.handleToSubmitButton()}>Submit</button>
           </div>
         </div>
+
+        <h2>Load Details</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.loadInputUserDetails.map((value, index) => {
+              return (
+                <tr key={index}>
+                  <td>{value.userName}</td>
+                  <td>{value.email}</td>
+                  <td>{value.password}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+        <h2>Get Method</h2>
         <div>
           <button onClick={() => this.getDetails()}>Load Details</button>
         </div>
